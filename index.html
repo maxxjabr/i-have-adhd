@@ -84,7 +84,19 @@ function blue_up() {
     document.body.style.backgroundColor = sym.concat(hue.toString(16));
     console.log(sym.concat(hue.toString(16)))
 }
+
+var count = 0;
+function setColor(btn, color) {
+    count++;
+    var property = document.getElementById(btn);
+    property.value = count.toString()
+    property.style.fontSize = "40px"
+    property.style.fontWeight = "665"
+}
+
 </script>
+
+<input type="button" id="button" value = "don't" style= "color:white; font-size:24px; font-weight:800; background-color:#8800ff; height:100px; width:100px; border:4px solid #404040; border-radius:50%; position:relative; left:590px; top:274px" onclick="setColor('button', '#101010')";/>
 
 </body>
 </html>
